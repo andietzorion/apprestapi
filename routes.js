@@ -8,5 +8,8 @@ module.exports = function(app){
 
     app.route('/tampil')
         .get(jsonku.tampilsemuagame);
+    
+    app.route('/tampil/:id')
+        .get(jsonku.tampilberdasarkanid);
 
 }
