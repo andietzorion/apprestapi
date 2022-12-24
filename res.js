@@ -2,7 +2,7 @@
 
 exports.ok = function(values, res){
     var data = {
-        'message':values,
+        'items':values,
         'status':200
     };
 
