@@ -18,4 +18,7 @@ module.exports = function (app) {
     app.route('/edit')
         .put(jsonku.editGame);
 
+        app.route('/delete')
+        .delete(jsonku.hapusGame);
+
 }

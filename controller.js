@@ -75,3 +75,17 @@ exports.editGame = function (req, res) {
         });
 
 };
+
+// Menghapus Data Berdasarkan ID
+exports.hapusGame = function (req, res) {
+    var id = req.body.id;
+    connection.query('DELETE FROM games WHERE id=?', [id],
+        function (error, rows, fields) {
+            if (error) {
+                console.log(error);
+            } else {
+                response.ok("Berhasil Menghapus Data Game", res)
+            }
+        });
+
+};
